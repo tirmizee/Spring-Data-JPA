@@ -40,4 +40,6 @@
 
 ### Ref
 
+Example of CascadeType.REFRESH in Hibernate
+
 - https://www.connect2java.com/tutorials/hibernate/refresh-method-in-hibernate/
