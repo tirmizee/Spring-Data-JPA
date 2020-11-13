@@ -1,5 +1,11 @@
 # Spring-Data-JPA
 
+##### Initailize Data 
+ 
+    spring.jpa.hibernate.ddl-auto=create
+
+Hibernate looks for import.sql in class path for data initialization if ddl-auto value create or create-drop.
+
 ### Annotation
 
   @Convert
