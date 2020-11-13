@@ -14,6 +14,13 @@ Both schema and data related sql statements can also be included in single sql f
 
 ####  Loading Scripts for multiple database vendors
 
+    spring.datasource.initialization-mode=always
+    spring.datasource.platform=mysql
+
+It’s quite common having multiple databases to work with in different environments (example H2 in DEV and MySql in production). Spring Boot processes the schema-${platform}.sql and data-${platform}.sql files (if present process, ignores if not presents), where platform is the value of spring.datasource.platform. This allows you to switch to database-specific scripts if necessary.
+
+For example if you have in class path schema-mysql.sql to intialize data in Mysql database and schema-h2.sql to initialize data in H2 database. Following is the configuration to work on Mysql database.
+
 ### Annotation
 
   @Convert
