@@ -6,6 +6,12 @@
 
 Hibernate looks for import.sql in class path for data initialization if ddl-auto value create or create-drop.
 
+####  Initialize using schema.sql and data.sql
+
+    spring.datasource.initialization-mode=always
+
+Both schema and data related sql statements can also be included in single sql file, but by naming convention it’s better approach to maintain all schema related scripts in scema.sql and all the data manipulation related statements in data.sql.
+
 ### Annotation
 
   @Convert
