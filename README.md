@@ -21,6 +21,11 @@ It’s quite common having multiple databases to work with in different environm
 
 For example if you have in class path schema-mysql.sql to intialize data in Mysql database and schema-h2.sql to initialize data in H2 database. Following is the configuration to work on Mysql database.
 
+#### Scripts with custom names
+
+    spring.datasource.initialization-mode=always
+    spring.datasource.schema=classpath:schema-data-dump.sql
+
 ### Annotation
 
   @Convert
