@@ -12,6 +12,8 @@ Hibernate looks for import.sql in class path for data initialization if ddl-auto
 
 Both schema and data related sql statements can also be included in single sql file, but by naming convention it’s better approach to maintain all schema related scripts in scema.sql and all the data manipulation related statements in data.sql.
 
+####  Loading Scripts for multiple database vendors
+
 ### Annotation
 
   @Convert
@@ -55,3 +57,5 @@ Both schema and data related sql statements can also be included in single sql f
 Example of CascadeType.REFRESH in Hibernate
 
 - https://www.connect2java.com/tutorials/hibernate/refresh-method-in-hibernate/
+- https://javabydeveloper.com/spring-boot-loading-initial-data/
+
